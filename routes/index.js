@@ -4,7 +4,7 @@
  */
 var request = require('request');
 var _ = require('lodash');
-var geoJson = require('../data/transit_relacio_trams.geojson');
+var geoJson = require('../data/transit_relacio_trams.js');
 var moment = require('moment');
 
 exports.index = function (req, res) {
