@@ -1,0 +1,55 @@
+{
+  "name": "transit-bcn",
+  "version": "0.1.0",
+  "description": "Map that display transit status on Barcelona",
+  "main": "app.js",
+  "scripts": {
+    "build": "browserify index.js -o public/assets/bundle.js",
+    "watch": "watchify index.js -o public/assets/bundle.js",
+    "lint": "eslint index.js",
+    "test": "tape test/*.js",
+    "minify": "uglifyjs public/assets/bundle.js -o public/assets/bundle.min.js"
+  },
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sigon426/transit-bcn.git"
+  },
+  "keywords": [
+    "transit",
+    "leaflet",
+    "barcelona",
+    "geojson",
+    "dat"
+  ],
+  "author": {
+    "name": "sigon",
+    "url": "https://github.com/sigon426"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MappingAndCo/transit-bcny/issues"
+  },
+  "homepage": "https://github.com/MappingAndCo/transit-bcn#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "eslint": "^2.4.0",
+    "tape": "^4.5.1",
+    "uglify-js": "^2.6.2",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "jquery": "^2.2.2",
+    "leaflet": "^0.7.7",
+    "leaflet-hash": "^0.2.1",
+    "lodash": "^4.7.0",
+    "moment": "^2.12.0",
+    "request": "^2.69.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
